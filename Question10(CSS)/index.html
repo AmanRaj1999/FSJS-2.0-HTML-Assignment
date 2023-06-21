@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        display: flex;
+      }
+
+      .blue-section {
+        background-color: blue;
+        padding: 10px;
+        flex: 2;
+      }
+
+      .grey-section {
+        background-color: grey;
+        padding: 10px;
+        flex: 3;
+        margin-left: 10px;
+      }
+
+      .grey-div {
+        background-color: grey;
+        padding: 70px;
+        margin-top: 20px;
+      }
+
+      .light-blue-boxes {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        gap: 200px;
+      }
+
+      .light-blue-box {
+        background-color: lightblue;
+        width: 300px;
+        height: 200px;
+        /* gap: 20px; */
+      }
+
+      .light-grey-div {
+        background-color: lightgrey;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Responsive styles for larger desktop screens */
+      @media (min-width: 1909px) {
+        .navbar {
+          flex-direction: row;
+        }
+
+        .blue-section,
+        .grey-section {
+          margin-left: 10px;
+        }
+
+        .light-blue-boxes {
+          margin-top: 20px;
+          justify-content: space-between;
+        }
+      }
+
+      /* Responsive styles for desktop and laptop */
+      @media (min-width: 1025px) and (max-width: 1908px) {
+        .navbar {
+          flex-direction: row;
+        }
+
+        .blue-section,
+        .grey-section {
+          margin-left: 10px;
+        }
+
+        .light-blue-boxes {
+          margin-top: 20px;
+          justify-content: space-evenly;
+        }
+      }
+
+      /* Responsive styles for tablets */
+      @media (max-width: 1024px) {
+        .light-blue-box {
+          width: calc(100% - 10px);
+        }
+      }
+      .light-blue-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 5px;
+        margin-left: 50px;
+      }
+
+      .light-blue-box {
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      /* Responsive styles for phones */
+      @media (max-width: 767px) {
+        .navbar {
+          flex-direction: column;
+        }
+
+        .blue-section,
+        .grey-section {
+          padding: 10px;
+          margin-left: 0;
+        }
+
+        .grey-div {
+          padding: 20px;
+        }
+
+        .light-blue-boxes {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .light-blue-box {
+          width: calc(100% - 10px);
+          height: 250px;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="blue-section">
+        <h2>Blue Section</h2>
+        <!-- Content for blue section -->
+      </div>
+      <div class="grey-section">
+        <h2>Grey Section</h2>
+        <!-- Content for grey section -->
+      </div>
+    </div>
+    <div class="grey-div">
+      <h2>Gray Div</h2>
+      <!-- Content for gray div -->
+    </div>
+    <div class="light-blue-boxes">
+      <div class="light-blue-box"></div>
+      <div class="light-blue-box"></div>
+      <div class="light-blue-box"></div>
+    </div>
+    <div class="light-grey-div">
+      <h2>Light Grey Div</h2>
+      <!-- Content for light grey div -->
+    </div>
+  </body>
+</html>
