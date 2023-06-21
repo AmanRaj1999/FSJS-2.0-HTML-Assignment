@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .Nonmetal {
+        background-color: #ffeb3b;
+      }
+
+      .NobleGas {
+        background-color: #00bcd4;
+      }
+
+      .AlkaliMetal {
+        background-color: #f44336;
+      }
+
+      .AlkalineEarthMetal {
+        background-color: #ff9800;
+      }
+
+      .Metalloid {
+        background-color: #e91e63;
+      }
+
+      .Metal {
+        background-color: #795548;
+      }
+
+      .Halogen {
+        background-color: #673ab7;
+      }
+
+      .TransitionMetal {
+        background-color: #9c27b0;
+      }
+
+      .period {
+        background-color: #607d8b;
+        color: white;
+      }
+
+      .shell {
+        background-color: #009688;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      id="psTable"
+      class="periodic-table"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+    >
+      <tr>
+        <td></td>
+        <td class="heading">
+          <div class="group">1</div>
+          <div class="cas">IA</div>
+        </td>
+        <td class="heading">
+          <div class="group">2</div>
+          <div class="cas">IIA</div>
+        </td>
+        <td class="heading">
+          <div class="group">3</div>
+          <div class="cas">IIIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">4</div>
+          <div class="cas">IVB</div>
+        </td>
+        <td class="heading">
+          <div class="group">5</div>
+          <div class="cas">VB</div>
+        </td>
+        <td class="heading">
+          <div class="group">6</div>
+          <div class="cas">VIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">7</div>
+          <div class="cas">VIIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">8</div>
+          <div class="cas">VIIIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">9</div>
+          <div class="cas">VIIIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">10</div>
+          <div class="cas">VIIIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">11</div>
+          <div class="cas">IB</div>
+        </td>
+        <td class="heading">
+          <div class="group">12</div>
+          <div class="cas">IIB</div>
+        </td>
+        <td class="heading">
+          <div class="group">13</div>
+          <div class="cas">IIIA</div>
+        </td>
+        <td class="heading">
+          <div class="group">14</div>
+          <div class="cas">IVA</div>
+        </td>
+        <td class="heading">
+          <div class="group">15</div>
+          <div class="cas">VA</div>
+        </td>
+        <td class="heading">
+          <div class="group">16</div>
+          <div class="cas">VIA</div>
+        </td>
+        <td class="heading">
+          <div class="group">17</div>
+          <div class="cas">VIIA</div>
+        </td>
+        <td class="heading">
+          <div class="group">18</div>
+          <div class="cas">VIIIA</div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="period">1</td>
+        <td id="an1" class="esCell Nonmetal">
+          <div id="anDiv1" class="esDiv Nonmetal">
+            <div class="esAN">1</div>
+            <div class="esEL">H</div>
+          </div>
+        </td>
+        <td id="an1_2" class="esCell Nonmetal">
+          <div id="anDiv1_2" class="esDiv Nonmetal">
+            <div class="esAN">1</div>
+            <div class="esEL">D</div>
+          </div>
+        </td>
+        <td id="an1_3" class="esCell Nonmetal">
+          <div id="anDiv1_3" class="esDiv Nonmetal">
+            <div class="esAN">1</div>
+            <div class="esEL">T</div>
+          </div>
+        </td>
+        <td colspan="9" rowspan="3"></td>
+        <td></td>
+        <td>
+          <div id="activityIndicator"></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="an2" class="esCell NobleGas">
+          <div id="anDiv2" class="esDiv NobleGas">
+            <div class="esAN">2</div>
+            <div class="esEL">He</div>
+          </div>
+        </td>
+        <td class="shell">K</td>
+      </tr>
+      <tr>
+        <td class="period">2</td>
+        <td id="an3" class="esCell AlkaliMetal">
+          <div id="anDiv3" class="esDiv AlkaliMetal">
+            <div class="esAN">3</div>
+            <div class="esEL">Li</div>
+          </div>
+        </td>
+        <td id="an4" class="esCell AlkalineEarthMetal">
+          <div id="anDiv4" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">4</div>
+            <div class="esEL">Be</div>
+          </div>
+        </td>
+        <td></td>
+        <td id="an5" class="esCell Metalloid">
+          <div id="anDiv5" class="esDiv Metalloid">
+            <div class="esAN">5</div>
+            <div class="esEL">B</div>
+          </div>
+        </td>
+        <td id="an6" class="esCell Nonmetal">
+          <div id="anDiv6" class="esDiv Nonmetal">
+            <div class="esAN">6</div>
+            <div class="esEL">C</div>
+          </div>
+        </td>
+        <td id="an7" class="esCell Nonmetal">
+          <div id="anDiv7" class="esDiv Nonmetal">
+            <div class="esAN">7</div>
+            <div class="esEL">N</div>
+          </div>
+        </td>
+        <td id="an8" class="esCell Nonmetal">
+          <div id="anDiv8" class="esDiv Nonmetal">
+            <div class="esAN">8</div>
+            <div class="esEL">O</div>
+          </div>
+        </td>
+        <td id="an9" class="esCell Halogen">
+          <div id="anDiv9" class="esDiv Halogen">
+            <div class="esAN">9</div>
+            <div class="esEL">F</div>
+          </div>
+        </td>
+        <td id="an10" class="esCell NobleGas">
+          <div id="anDiv10" class="esDiv NobleGas">
+            <div class="esAN">10</div>
+            <div class="esEL">Ne</div>
+          </div>
+        </td>
+        <td class="shell">L</td>
+      </tr>
+      <tr>
+        <td class="period">3</td>
+        <td id="an11" class="esCell AlkaliMetal">
+          <div id="anDiv11" class="esDiv AlkaliMetal">
+            <div class="esAN">11</div>
+            <div class="esEL">Na</div>
+          </div>
+        </td>
+        <td id="an12" class="esCell AlkalineEarthMetal">
+          <div id="anDiv12" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">12</div>
+            <div class="esEL">Mg</div>
+          </div>
+        </td>
+        <td></td>
+        <td id="an13" class="esCell Metal">
+          <div id="anDiv13" class="esDiv Metal">
+            <div class="esAN">13</div>
+            <div class="esEL">Al</div>
+          </div>
+        </td>
+        <td id="an14" class="esCell Metalloid">
+          <div id="anDiv14" class="esDiv Metalloid">
+            <div class="esAN">14</div>
+            <div class="esEL">Si</div>
+          </div>
+        </td>
+        <td id="an15" class="esCell Nonmetal">
+          <div id="anDiv15" class="esDiv Nonmetal">
+            <div class="esAN">15</div>
+            <div class="esEL">P</div>
+          </div>
+        </td>
+        <td id="an16" class="esCell Nonmetal">
+          <div id="anDiv16" class="esDiv Nonmetal">
+            <div class="esAN">16</div>
+            <div class="esEL">S</div>
+          </div>
+        </td>
+        <td id="an17" class="esCell Halogen">
+          <div id="anDiv17" class="esDiv Halogen">
+            <div class="esAN">17</div>
+            <div class="esEL">Cl</div>
+          </div>
+        </td>
+        <td id="an18" class="esCell NobleGas">
+          <div id="anDiv18" class="esDiv NobleGas">
+            <div class="esAN">18</div>
+            <div class="esEL">Ar</div>
+          </div>
+        </td>
+        <td class="shell">M</td>
+      </tr>
+      <tr>
+        <td class="period">4</td>
+        <td id="an19" class="esCell AlkaliMetal">
+          <div id="anDiv19" class="esDiv AlkaliMetal">
+            <div class="esAN">19</div>
+            <div class="esEL">K</div>
+          </div>
+        </td>
+        <td id="an20" class="esCell AlkalineEarthMetal">
+          <div id="anDiv20" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">20</div>
+            <div class="esEL">Ca</div>
+          </div>
+        </td>
+        <td id="an21" class="esCell TransitionMetal">
+          <div id="anDiv21" class="esDiv TransitionMetal">
+            <div class="esAN">21</div>
+            <div class="esEL">Sc</div>
+          </div>
+        </td>
+        <td id="an22" class="esCell TransitionMetal">
+          <div id="anDiv22" class="esDiv TransitionMetal">
+            <div class="esAN">22</div>
+            <div class="esEL">Ti</div>
+          </div>
+        </td>
+        <td id="an23" class="esCell TransitionMetal">
+          <div id="anDiv23" class="esDiv TransitionMetal">
+            <div class="esAN">23</div>
+            <div class="esEL">V</div>
+          </div>
+        </td>
+        <td id="an24" class="esCell TransitionMetal">
+          <div id="anDiv24" class="esDiv TransitionMetal">
+            <div class="esAN">24</div>
+            <div class="esEL">Cr</div>
+          </div>
+        </td>
+        <td id="an25" class="esCell TransitionMetal">
+          <div id="anDiv25" class="esDiv TransitionMetal">
+            <div class="esAN">25</div>
+            <div class="esEL">Mn</div>
+          </div>
+        </td>
+        <td id="an26" class="esCell TransitionMetal">
+          <div id="anDiv26" class="esDiv TransitionMetal">
+            <div class="esAN">26</div>
+            <div class="esEL">Fe</div>
+          </div>
+        </td>
+        <td id="an27" class="esCell TransitionMetal">
+          <div id="anDiv27" class="esDiv TransitionMetal">
+            <div class="esAN">27</div>
+            <div class="esEL">Co</div>
+          </div>
+        </td>
+        <td id="an28" class="esCell TransitionMetal">
+          <div id="anDiv28" class="esDiv TransitionMetal">
+            <div class="esAN">28</div>
+            <div class="esEL">Ni</div>
+          </div>
+        </td>
+        <td id="an29" class="esCell TransitionMetal">
+          <div id="anDiv29" class="esDiv TransitionMetal">
+            <div class="esAN">29</div>
+            <div class="esEL">Cu</div>
+          </div>
+        </td>
+        <td id="an30" class="esCell TransitionMetal">
+          <div id="anDiv30" class="esDiv TransitionMetal">
+            <div class="esAN">30</div>
+            <div class="esEL">Zn</div>
+          </div>
+        </td>
+        <td id="an31" class="esCell Metal">
+          <div id="anDiv31" class="esDiv Metal">
+            <div class="esAN">31</div>
+            <div class="esEL">Ga</div>
+          </div>
+        </td>
+        <td id="an32" class="esCell Metalloid">
+          <div id="anDiv32" class="esDiv Metalloid">
+            <div class="esAN">32</div>
+            <div class="esEL">Ge</div>
+          </div>
+        </td>
+        <td id="an33" class="esCell Metalloid">
+          <div id="anDiv33" class="esDiv Metalloid">
+            <div class="esAN">33</div>
+            <div class="esEL">As</div>
+          </div>
+        </td>
+        <td id="an34" class="esCell Nonmetal">
+          <div id="anDiv34" class="esDiv Nonmetal">
+            <div class="esAN">34</div>
+            <div class="esEL">Se</div>
+          </div>
+        </td>
+        <td id="an35" class="esCell Halogen">
+          <div id="anDiv35" class="esDiv Halogen">
+            <div class="esAN">35</div>
+            <div class="esEL">Br</div>
+          </div>
+        </td>
+        <td id="an36" class="esCell NobleGas">
+          <div id="anDiv36" class="esDiv NobleGas">
+            <div class="esAN">36</div>
+            <div class="esEL">Kr</div>
+          </div>
+        </td>
+        <td class="shell">N</td>
+      </tr>
+      <tr>
+        <td class="period">5</td>
+        <td id="an37" class="esCell AlkaliMetal">
+          <div id="anDiv37" class="esDiv AlkaliMetal">
+            <div class="esAN">37</div>
+            <div class="esEL">Rb</div>
+          </div>
+        </td>
+        <td id="an38" class="esCell AlkalineEarthMetal">
+          <div id="anDiv38" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">38</div>
+            <div class="esEL">Sr</div>
+          </div>
+        </td>
+        <td id="an39" class="esCell TransitionMetal">
+          <div id="anDiv39" class="esDiv TransitionMetal">
+            <div class="esAN">39</div>
+            <div class="esEL">Y</div>
+          </div>
+        </td>
+        <td id="an40" class="esCell TransitionMetal">
+          <div id="anDiv40" class="esDiv TransitionMetal">
+            <div class="esAN">40</div>
+            <div class="esEL">Zr</div>
+          </div>
+        </td>
+        <td id="an41" class="esCell TransitionMetal">
+          <div id="anDiv41" class="esDiv TransitionMetal">
+            <div class="esAN">41</div>
+            <div class="esEL">Nb</div>
+          </div>
+        </td>
+        <td id="an42" class="esCell TransitionMetal">
+          <div id="anDiv42" class="esDiv TransitionMetal">
+            <div class="esAN">42</div>
+            <div class="esEL">Mo</div>
+          </div>
+        </td>
+        <td id="an43" class="esCell TransitionMetal">
+          <div id="anDiv43" class="esDiv TransitionMetal">
+            <div class="esAN">43</div>
+            <div class="esEL">Tc</div>
+          </div>
+        </td>
+        <td id="an44" class="esCell TransitionMetal">
+          <div id="anDiv44" class="esDiv TransitionMetal">
+            <div class="esAN">44</div>
+            <div class="esEL">Ru</div>
+          </div>
+        </td>
+        <td id="an45" class="esCell TransitionMetal">
+          <div id="anDiv45" class="esDiv TransitionMetal">
+            <div class="esAN">45</div>
+            <div class="esEL">Rh</div>
+          </div>
+        </td>
+        <td id="an46" class="esCell TransitionMetal">
+          <div id="anDiv46" class="esDiv TransitionMetal">
+            <div class="esAN">46</div>
+            <div class="esEL">Pd</div>
+          </div>
+        </td>
+        <td id="an47" class="esCell TransitionMetal">
+          <div id="anDiv47" class="esDiv TransitionMetal">
+            <div class="esAN">47</div>
+            <div class="esEL">Ag</div>
+          </div>
+        </td>
+        <td id="an48" class="esCell TransitionMetal">
+          <div id="anDiv48" class="esDiv TransitionMetal">
+            <div class="esAN">48</div>
+            <div class="esEL">Cd</div>
+          </div>
+        </td>
+        <td id="an49" class="esCell Metal">
+          <div id="anDiv49" class="esDiv Metal">
+            <div class="esAN">49</div>
+            <div class="esEL">In</div>
+          </div>
+        </td>
+        <td id="an50" class="esCell Metal">
+          <div id="anDiv50" class="esDiv Metal">
+            <div class="esAN">50</div>
+            <div class="esEL">Sn</div>
+          </div>
+        </td>
+        <td id="an51" class="esCell Metalloid">
+          <div id="anDiv51" class="esDiv Metalloid">
+            <div class="esAN">51</div>
+            <div class="esEL">Sb</div>
+          </div>
+        </td>
+        <td id="an52" class="esCell Metalloid">
+          <div id="anDiv52" class="esDiv Metalloid">
+            <div class="esAN">52</div>
+            <div class="esEL">Te</div>
+          </div>
+        </td>
+        <td id="an53" class="esCell Halogen">
+          <div id="anDiv53" class="esDiv Halogen">
+            <div class="esAN">53</div>
+            <div class="esEL">I</div>
+          </div>
+        </td>
+        <td id="an54" class="esCell NobleGas">
+          <div id="anDiv54" class="esDiv NobleGas">
+            <div class="esAN">54</div>
+            <div class="esEL">Xe</div>
+          </div>
+        </td>
+        <td class="shell">O</td>
+      </tr>
+      <tr>
+        <td class="period">6</td>
+        <td id="an55" class="esCell AlkaliMetal">
+          <div id="anDiv55" class="esDiv AlkaliMetal">
+            <div class="esAN">55</div>
+            <div class="esEL">Cs</div>
+          </div>
+        </td>
+        <td id="an56" class="esCell AlkalineEarthMetal">
+          <div id="anDiv56" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">56</div>
+            <div class="esEL">Ba</div>
+          </div>
+        </td>
+        <td class="Lanthanide">*</td>
+        <td id="an72" class="esCell TransitionMetal">
+          <div id="anDiv72" class="esDiv TransitionMetal">
+            <div class="esAN">72</div>
+            <div class="esEL">Hf</div>
+          </div>
+        </td>
+        <td id="an73" class="esCell TransitionMetal">
+          <div id="anDiv73" class="esDiv TransitionMetal">
+            <div class="esAN">73</div>
+            <div class="esEL">Ta</div>
+          </div>
+        </td>
+        <td id="an74" class="esCell TransitionMetal">
+          <div id="anDiv74" class="esDiv TransitionMetal">
+            <div class="esAN">74</div>
+            <div class="esEL">W</div>
+          </div>
+        </td>
+        <td id="an75" class="esCell TransitionMetal">
+          <div id="anDiv75" class="esDiv TransitionMetal">
+            <div class="esAN">75</div>
+            <div class="esEL">Re</div>
+          </div>
+        </td>
+        <td id="an76" class="esCell TransitionMetal">
+          <div id="anDiv76" class="esDiv TransitionMetal">
+            <div class="esAN">76</div>
+            <div class="esEL">Os</div>
+          </div>
+        </td>
+        <td id="an77" class="esCell TransitionMetal">
+          <div id="anDiv77" class="esDiv TransitionMetal">
+            <div class="esAN">77</div>
+            <div class="esEL">Ir</div>
+          </div>
+        </td>
+        <td id="an78" class="esCell TransitionMetal">
+          <div id="anDiv78" class="esDiv TransitionMetal">
+            <div class="esAN">78</div>
+            <div class="esEL">Pt</div>
+          </div>
+        </td>
+        <td id="an79" class="esCell TransitionMetal">
+          <div id="anDiv79" class="esDiv TransitionMetal">
+            <div class="esAN">79</div>
+            <div class="esEL">Au</div>
+          </div>
+        </td>
+        <td id="an80" class="esCell TransitionMetal">
+          <div id="anDiv80" class="esDiv TransitionMetal">
+            <div class="esAN">80</div>
+            <div class="esEL">Hg</div>
+          </div>
+        </td>
+        <td id="an81" class="esCell Metal">
+          <div id="anDiv81" class="esDiv Metal">
+            <div class="esAN">81</div>
+            <div class="esEL">Tl</div>
+          </div>
+        </td>
+        <td id="an82" class="esCell Metal">
+          <div id="anDiv82" class="esDiv Metal">
+            <div class="esAN">82</div>
+            <div class="esEL">Pb</div>
+          </div>
+        </td>
+        <td id="an83" class="esCell Metal">
+          <div id="anDiv83" class="esDiv Metal">
+            <div class="esAN">83</div>
+            <div class="esEL">Bi</div>
+          </div>
+        </td>
+        <td id="an84" class="esCell Metalloid">
+          <div id="anDiv84" class="esDiv Metalloid">
+            <div class="esAN">84</div>
+            <div class="esEL">Po</div>
+          </div>
+        </td>
+        <td id="an85" class="esCell Halogen">
+          <div id="anDiv85" class="esDiv Halogen">
+            <div class="esAN">85</div>
+            <div class="esEL">At</div>
+          </div>
+        </td>
+        <td id="an86" class="esCell NobleGas">
+          <div id="anDiv86" class="esDiv NobleGas">
+            <div class="esAN">86</div>
+            <div class="esEL">Rn</div>
+          </div>
+        </td>
+        <td class="shell">P</td>
+      </tr>
+      <tr>
+        <td class="period">7</td>
+        <td id="an87" class="esCell AlkaliMetal">
+          <div id="anDiv87" class="esDiv AlkaliMetal">
+            <div class="esAN">87</div>
+            <div class="esEL">Fr</div>
+          </div>
+        </td>
+        <td id="an88" class="esCell AlkalineEarthMetal">
+          <div id="anDiv88" class="esDiv AlkalineEarthMetal">
+            <div class="esAN">88</div>
+            <div class="esEL">Ra</div>
+          </div>
+        </td>
+        <td class="Actinide">**</td>
+        <td id="an104" class="esCell TransitionMetal">
+          <div id="anDiv104" class="esDiv TransitionMetal">
+            <div class="esAN">104</div>
+            <div class="esEL">Rf</div>
+          </div>
+        </td>
+        <td id="an105" class="esCell TransitionMetal">
+          <div id="anDiv105" class="esDiv TransitionMetal">
+            <div class="esAN">105</div>
+            <div class="esEL">Db</div>
+          </div>
+        </td>
+        <td id="an106" class="esCell TransitionMetal">
+          <div id="anDiv106" class="esDiv TransitionMetal">
+            <div class="esAN">106</div>
+            <div class="esEL">Sg</div>
+          </div>
+        </td>
+        <td id="an107" class="esCell TransitionMetal">
+          <div id="anDiv107" class="esDiv TransitionMetal">
+            <div class="esAN">107</div>
+            <div class="esEL">Bh</div>
+          </div>
+        </td>
+        <td id="an108" class="esCell TransitionMetal">
+          <div id="anDiv108" class="esDiv TransitionMetal">
+            <div class="esAN">108</div>
+            <div class="esEL">Hs</div>
+          </div>
+        </td>
+        <td id="an109" class="esCell TransitionMetal">
+          <div id="anDiv109" class="esDiv TransitionMetal">
+            <div class="esAN">109</div>
+            <div class="esEL">Mt</div>
+          </div>
+        </td>
+        <td id="an110" class="esCell TransitionMetal">
+          <div id="anDiv110" class="esDiv TransitionMetal">
+            <div class="esAN">110</div>
+            <div class="esEL">Ds</div>
+          </div>
+        </td>
+        <td id="an111" class="esCell TransitionMetal">
+          <div id="anDiv111" class="esDiv TransitionMetal">
+            <div class="esAN">111</div>
+            <div class="esEL">Rg</div>
+          </div>
+        </td>
+        <td id="an112" class="esCell element-disabled">
+          <div id="anDiv112" class="esDiv element-disabled">
+            <div class="esAN">112</div>
+            <div class="esEL">Cn</div>
+          </div>
+        </td>
+        <td id="an113" class="esCell element-disabled">
+          <div id="anDiv113" class="esDiv element-disabled">
+            <div class="esAN">113</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td id="an114" class="esCell element-disabled">
+          <div id="anDiv114" class="esDiv element-disabled">
+            <div class="esAN">114</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td id="an115" class="esCell element-disabled">
+          <div id="anDiv115" class="esDiv element-disabled">
+            <div class="esAN">115</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td id="an116" class="esCell element-disabled">
+          <div id="anDiv116" class="esDiv element-disabled">
+            <div class="esAN">116</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td id="an117" class="esCell element-disabled">
+          <div id="anDiv117" class="esDiv element-disabled">
+            <div class="esAN">117</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td id="an118" class="esCell element-disabled">
+          <div id="anDiv118" class="esDiv element-disabled">
+            <div class="esAN">118</div>
+            <div class="esEL"></div>
+          </div>
+        </td>
+        <td class="shell">Q</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="Lanthanide">*</td>
+        <td id="an57" class="esCell Lanthanide">
+          <div id="anDiv57" class="esDiv Lanthanide">
+            <div class="esAN">57</div>
+            <div class="esEL">La</div>
+          </div>
+        </td>
+        <td id="an58" class="esCell Lanthanide">
+          <div id="anDiv58" class="esDiv Lanthanide">
+            <div class="esAN">58</div>
+            <div class="esEL">Ce</div>
+          </div>
+        </td>
+        <td id="an59" class="esCell Lanthanide">
+          <div id="anDiv59" class="esDiv Lanthanide">
+            <div class="esAN">59</div>
+            <div class="esEL">Pr</div>
+          </div>
+        </td>
+        <td id="an60" class="esCell Lanthanide">
+          <div id="anDiv60" class="esDiv Lanthanide">
+            <div class="esAN">60</div>
+            <div class="esEL">Nd</div>
+          </div>
+        </td>
+        <td id="an61" class="esCell Lanthanide">
+          <div id="anDiv61" class="esDiv Lanthanide">
+            <div class="esAN">61</div>
+            <div class="esEL">Pm</div>
+          </div>
+        </td>
+        <td id="an62" class="esCell Lanthanide">
+          <div id="anDiv62" class="esDiv Lanthanide">
+            <div class="esAN">62</div>
+            <div class="esEL">Sm</div>
+          </div>
+        </td>
+        <td id="an63" class="esCell Lanthanide">
+          <div id="anDiv63" class="esDiv Lanthanide">
+            <div class="esAN">63</div>
+            <div class="esEL">Eu</div>
+          </div>
+        </td>
+        <td id="an64" class="esCell Lanthanide">
+          <div id="anDiv64" class="esDiv Lanthanide">
+            <div class="esAN">64</div>
+            <div class="esEL">Gd</div>
+          </div>
+        </td>
+        <td id="an65" class="esCell Lanthanide">
+          <div id="anDiv65" class="esDiv Lanthanide">
+            <div class="esAN">65</div>
+            <div class="esEL">Tb</div>
+          </div>
+        </td>
+        <td id="an66" class="esCell Lanthanide">
+          <div id="anDiv66" class="esDiv Lanthanide">
+            <div class="esAN">66</div>
+            <div class="esEL">Dy</div>
+          </div>
+        </td>
+        <td id="an67" class="esCell Lanthanide">
+          <div id="anDiv67" class="esDiv Lanthanide">
+            <div class="esAN">67</div>
+            <div class="esEL">Ho</div>
+          </div>
+        </td>
+        <td id="an68" class="esCell Lanthanide">
+          <div id="anDiv68" class="esDiv Lanthanide">
+            <div class="esAN">68</div>
+            <div class="esEL">Er</div>
+          </div>
+        </td>
+        <td id="an69" class="esCell Lanthanide">
+          <div id="anDiv69" class="esDiv Lanthanide">
+            <div class="esAN">69</div>
+            <div class="esEL">Tm</div>
+          </div>
+        </td>
+        <td id="an70" class="esCell Lanthanide">
+          <div id="anDiv70" class="esDiv Lanthanide">
+            <div class="esAN">70</div>
+            <div class="esEL">Yb</div>
+          </div>
+        </td>
+        <td id="an71" class="esCell Lanthanide">
+          <div id="anDiv71" class="esDiv Lanthanide">
+            <div class="esAN">71</div>
+            <div class="esEL">Lu</div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="Actinide">**</td>
+        <td id="an89" class="esCell Actinide">
+          <div id="anDiv89" class="esDiv Actinide">
+            <div class="esAN">89</div>
+            <div class="esEL">Ac</div>
+          </div>
+        </td>
+        <td id="an90" class="esCell Actinide">
+          <div id="anDiv90" class="esDiv Actinide">
+            <div class="esAN">90</div>
+            <div class="esEL">Th</div>
+          </div>
+        </td>
+        <td id="an91" class="esCell Actinide">
+          <div id="anDiv91" class="esDiv Actinide">
+            <div class="esAN">91</div>
+            <div class="esEL">Pa</div>
+          </div>
+        </td>
+        <td id="an92" class="esCell Actinide">
+          <div id="anDiv92" class="esDiv Actinide">
+            <div class="esAN">92</div>
+            <div class="esEL">U</div>
+          </div>
+        </td>
+        <td id="an93" class="esCell Actinide">
+          <div id="anDiv93" class="esDiv Actinide">
+            <div class="esAN">93</div>
+            <div class="esEL">Np</div>
+          </div>
+        </td>
+        <td id="an94" class="esCell Actinide">
+          <div id="anDiv94" class="esDiv Actinide">
+            <div class="esAN">94</div>
+            <div class="esEL">Pu</div>
+          </div>
+        </td>
+        <td id="an95" class="esCell Actinide">
+          <div id="anDiv95" class="esDiv Actinide">
+            <div class="esAN">95</div>
+            <div class="esEL">Am</div>
+          </div>
+        </td>
+        <td id="an96" class="esCell Actinide">
+          <div id="anDiv96" class="esDiv Actinide">
+            <div class="esAN">96</div>
+            <div class="esEL">Cm</div>
+          </div>
+        </td>
+        <td id="an97" class="esCell Actinide">
+          <div id="anDiv97" class="esDiv Actinide">
+            <div class="esAN">97</div>
+            <div class="esEL">Bk</div>
+          </div>
+        </td>
+        <td id="an98" class="esCell Actinide">
+          <div id="anDiv98" class="esDiv Actinide">
+            <div class="esAN">98</div>
+            <div class="esEL">Cf</div>
+          </div>
+        </td>
+        <td id="an99" class="esCell Actinide">
+          <div id="anDiv99" class="esDiv Actinide">
+            <div class="esAN">99</div>
+            <div class="esEL">Es</div>
+          </div>
+        </td>
+        <td id="an100" class="esCell Actinide">
+          <div id="anDiv100" class="esDiv Actinide">
+            <div class="esAN">100</div>
+            <div class="esEL">Fm</div>
+          </div>
+        </td>
+        <td id="an101" class="esCell Actinide">
+          <div id="anDiv101" class="esDiv Actinide">
+            <div class="esAN">101</div>
+            <div class="esEL">Md</div>
+          </div>
+        </td>
+        <td id="an102" class="esCell Actinide">
+          <div id="anDiv102" class="esDiv Actinide">
+            <div class="esAN">102</div>
+            <div class="esEL">No</div>
+          </div>
+        </td>
+        <td id="an103" class="esCell Actinide">
+          <div id="anDiv103" class="esDiv Actinide">
+            <div class="esAN">103</div>
+            <div class="esEL">Lr</div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
